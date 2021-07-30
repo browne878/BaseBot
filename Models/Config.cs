@@ -1,8 +1,13 @@
-﻿namespace BaseBot.Models
+﻿using ArkDiscordHelper.Models;
+using System.Collections.Generic;
+
+namespace ArkDiscordHelper.Models
 {
     public class Config
     {
-        public string Token { get; set; }
-        public string Prefix { get; set; }
+        public DiscordOptions DiscordOptions { get; set; }
+        public List<Servers> Servers { get; set; }
+        public MySql MySql { get; set; }
+
     }
 }
